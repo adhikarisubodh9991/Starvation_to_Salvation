@@ -1,0 +1,38 @@
+{
+  "name": "feed_in_need",
+  "version": "1.0.0",
+  "description": "A full-stack web application for food donation management that connects food donors with receivers in need. Built with React, Node.js, Express, and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend && cross-env NODE_ENV=production node server.js",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install-all": "npm install --legacy-peer-deps --prefix backend && npm install --prefix frontend",
+    "build": "npm install --legacy-peer-deps --prefix backend && cd frontend && npm install --include=dev && npm run build",
+    "build:frontend": "cd frontend && npm install --include=dev && npm run build",
+    "postinstall": "npm install --legacy-peer-deps --prefix backend && cd frontend && npm install --include=dev && npm run build"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhikarisubodh9991/feed-in-need.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adhikarisubodh9991/feed-in-need/issues"
+  },
+  "homepage": "https://github.com/adhikarisubodh9991/feed-in-need#readme",
+  "dependencies": {
+    "cross-env": "^10.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^7.3.0"
+  }
+}
