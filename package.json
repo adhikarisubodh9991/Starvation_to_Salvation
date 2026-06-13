@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd frontend && npm install --include=dev && npm run build",
-    "start": "cd frontend && npm start",
+    "start": "node backend/server.js",
     "build:frontend": "cd frontend && npm install --include=dev && npm run build",
     "postinstall": "npm install --legacy-peer-deps --prefix backend && cd frontend && npm install --include=dev && npm run build"
   },
