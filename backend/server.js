@@ -32,7 +32,7 @@ import { startCleanupJob } from './utils/cleanupUnverifiedUsers.js';
 const app = express();
 
 // Connect to MongoDB
-connectDB();
+// connectDB();
 
 // Start cleanup job for unverified users (runs every 1 hour, deletes users unverified for 24+ hours)
 startCleanupJob(1, 24);
