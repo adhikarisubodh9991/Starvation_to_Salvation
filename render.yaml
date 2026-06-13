@@ -1,17 +1,6 @@
 services:
   - type: web
-    name: starvation-to-salvation-backend
-    env: node
-    plan: free
-    buildCommand: "npm install"
-    startCommand: "npm start"
-    healthCheckPath: /
-    envVars:
-      - key: NODE_VERSION
-        value: 20.20.2
-  - type: web
-    name: starvation-to-salvation-frontend
-    plan: free
+    name: starvation-to-salvation
     env: static
     buildCommand: "cd frontend && npm install && npm run build"
     staticPublishPath: ./frontend/dist
