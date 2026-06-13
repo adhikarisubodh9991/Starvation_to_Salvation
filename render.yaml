@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: static
     name: starvation-to-salvation
     env: static
     buildCommand: "cd frontend && npm install && npm run build"
